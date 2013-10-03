@@ -1,0 +1,13 @@
+data
+.pydevproject*
+.installed.cfg
+.mr.developer.cfg
+*/_build
+bin
+.idea
+.settings
+develop-eggs
+eggs
+*.pyc
+static
+parts
