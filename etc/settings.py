@@ -204,7 +204,6 @@ INSTALLED_APPS = (
     'south',
     'pycon.api',
     'pycon.core',
-    'pycon.wines',
 )
 
 # A sample logging configuration. The only tangible logging

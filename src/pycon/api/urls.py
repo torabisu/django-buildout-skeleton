@@ -4,6 +4,7 @@ from django.conf.urls import patterns, url, include
 from django.conf import settings
 
 from rest_framework import routers
+from rest_framework.viewsets import ViewSet
 
 from pycon.core.utils import module_import
 
@@ -25,7 +26,7 @@ for app in settings.INSTALLED_APPS:
         logger.debug('Importing %s.api...' % app)
 
         for member in dir(module):
-            if 'ViewSet' in member:
+            if isinstance(member, ViewSet):
                 logger.info('member = %s' % member)
                 ViewSet = getattr(module, member)
                 name = member.replace('ViewSet', '').lower()

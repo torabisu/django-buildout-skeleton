@@ -1,17 +1,13 @@
 from django.contrib.auth.models import AbstractUser, Group
-from django.db import models
 
 from pycon.core.models import Base
 
 
 class EndUser(Base, AbstractUser):
     """
-    This EndUser is used instead of the standard django.contrib.auth.models.User.  Main reason is the link to a
-    customer.
+    This EndUser is used instead of the standard django.contrib.auth.models.User.  This allows you
+    to connect the standard django user to an additional model like Customer.  You can then use
+    request.user.customer in filters etc.
     """
-    #: User interface skin to use, defaults to "skin-3" (red).
-    skin = models.CharField(max_length=16)
 
-    def __str__(self):
-        return self.username
-
+    pass
