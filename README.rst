@@ -8,7 +8,7 @@ PyConZA 2013.
 Templates
 =========
 
-Templates removed do to Copywright, can get from https://wrapbootstrap.com/ and pull into
+Templates removed due to Copywright, can get from https://wrapbootstrap.com/ and pull into
 your own base.html / base-layout.html Django template files.
 
 API
