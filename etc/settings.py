@@ -45,19 +45,19 @@ else:
             'HOST': '',
             'PORT': '',
         },
-        '_wordpress': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'wordpress',
-            'USER': 'wordpress',
-            'PASSWORD': 'wordpress',
-            'HOST': '',
-            'PORT': '',
-        },
+        #'_wordpress': {
+        #    'ENGINE': 'django.db.backends.mysql',
+        #    'NAME': 'wordpress',
+        #    'USER': 'wordpress',
+        #    'PASSWORD': 'wordpress',
+        #    'HOST': '',
+        #    'PORT': '',
+        #},
     }
 
-    DATABASE_ROUTERS = [
-        'pycon._wordpress.routers.WordPressRouter',
-    ]
+    #DATABASE_ROUTERS = [
+    #    'pycon._wordpress.routers.WordPressRouter',
+    #]
 
 CACHES = {
     'default': {
